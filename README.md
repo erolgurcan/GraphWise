@@ -1,7 +1,3 @@
-Here’s a **GraphWise Roadmap section** you can append to your README — it’s written to align with your learning and project goals (Neo4J, Azure DevOps, AI Agents, ETL pipelines, and Angular).
-
----
-
 ## 🧭 Project Roadmap — *GraphWise*
 
 GraphWise will evolve in well-defined phases to progressively integrate Data Engineering, AI, and DevOps best practices.
