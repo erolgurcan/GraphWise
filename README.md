@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-Here’s a **GraphWise Roadmap section** you can append to your README — it’s written to align with your learning and project goals (Neo4J, Azure DevOps, AI Agents, ETL pipelines, and Angular).
-
----
-
 ## 🧭 Project Roadmap — *GraphWise*
 
 GraphWise will evolve in well-defined phases to progressively integrate Data Engineering, AI, and DevOps best practices.
@@ -87,7 +82,3 @@ GraphWise will evolve in well-defined phases to progressively integrate Data Eng
 * [ ] Implement Role-Based Access Control (RBAC) for multi-user support.
 
 
-=======
-# GraphWise
-GraphWise is an open-source, end-to-end platform that enables users to track stock portfolios, discover relationships between companies, and receive intelligent insights generated through AI.
->>>>>>> 98bed9e (Initial commit)

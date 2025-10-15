@@ -1,0 +1,32 @@
+services:
+  neo4j:
+    image: neo4j:2025.09.0
+    container_name: graphwise-neo4j
+    restart: unless-stopped
+    ports:
+      - "7474:7474"   # HTTP
+      - "7687:7687"   # BOLT
+    environment:
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD}"
+      NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
+      # Install Lab plugins: apoc and graph-data-science (GDS)
+      NEO4JLABS_PLUGINS: '["apoc","graph-data-science"]'
+      # Optional: allow non-local drivers (useful for containers/host)
+      # Adjust memory if desired
+      # NEO4J_dbms_memory_heap__max_size: "2G"
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - neo4j_import:/var/lib/neo4j/import
+      - neo4j_plugins:/plugins
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7474/"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  neo4j_import:
+  neo4j_plugins:
