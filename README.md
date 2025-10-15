@@ -1,2 +1,2 @@
 # GraphWise
-GraphWise is an open-source, end-to-end platform that enables users to track stock portfolios, discover relationships between companies, and receive intelligent insights generated through AI.
+GraphWise is a personal RAG-enabled stock portfolio tracking and research platform built to help you learn .NET / ASP.NET Core, Angular, Neo4j, Semantic Kernel (C# agents), and Azure DevOps while providing a useful tool to track positions, signals, and research. This README gives an overview, development setup, architecture, and pointers to implement core features.
